@@ -1,31 +1,35 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Col, Row, OverlayTrigger, Tooltip } from "react-bootstrap";
 import {
   SiLinux,
   SiVisualstudiocode,
   SiPostman,
   SiHeroku,
   SiVercel,
+  SiAndroidstudio,
+  SiDocker,
+  SiGithub,
+  SiKubernetes,
 } from "react-icons/si";
+import { DiNpm } from "react-icons/di";
 
 function Toolstack() {
+  const renderTooltip = (msg) => <Tooltip>{msg}</Tooltip>;
+  const renderTechItem = (stack, tooltip) => (
+    <OverlayTrigger placement="top" overlay={renderTooltip(tooltip)}>
+      <Col xs={4} md={2} className="tech-icons">
+        {stack}
+      </Col>
+    </OverlayTrigger>
+  );
+
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiLinux />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiHeroku />
-      </Col>
+      {renderTechItem(<SiGithub />, "Github")}
+      {renderTechItem(<SiVisualstudiocode />, "Visual Studio Code")}
+      {renderTechItem(<SiPostman />, "Postman")}
+      {renderTechItem(<DiNpm />, "Node Package Manager (npm)")}
+      {renderTechItem(<SiDocker />, "Docker")}
     </Row>
   );
 }

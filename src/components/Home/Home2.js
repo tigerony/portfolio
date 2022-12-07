@@ -1,13 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/avatar.png";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { AiFillGithub, AiOutlineMail } from "react-icons/ai";
+import { FaLinkedinIn, FaTelegram, FaDiscord } from "react-icons/fa";
 
 function Home2() {
   return (
@@ -24,21 +20,11 @@ function Home2() {
               <br />
               <br />I am fluent in classics like
               <i>
-                <b className="purple"> C++, Javascript and Python. </b>
+                <b className="purple"> C++, C#, Javascript, Python and GoLang. </b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Deep Learning and Natural Launguage Processing.
-                </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
+              I have hands-on experiences in the products development
               with <b className="purple">Node.js</b> and
               <i>
                 <b className="purple">
@@ -49,6 +35,16 @@ function Home2() {
               &nbsp; like
               <i>
                 <b className="purple"> React.js and Next.js</b>
+              </i>
+              <br />
+              <br />
+              Whenever possible, I also apply my passion for building new &nbsp;
+              <i>
+                <b className="purple">Web Technologies and Products </b> and
+                also in areas related to{" "}
+                <b className="purple">
+                  Deep Learning and Natural Launguage Processing.
+                </b>
               </i>
             </p>
           </Col>
@@ -67,7 +63,17 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://t.me/rabiter1"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <FaTelegram />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://github.com/tigerony"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -77,32 +83,22 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href="https://www.linkedin.com/in/william-lei-5b517b257/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <FaLinkedinIn />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="mailto:williamlei95906@gmail.com"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour home-social-icons"
+                  className="icon-colour  home-social-icons"
                 >
-                  <AiFillInstagram />
+                  <AiOutlineMail />
                 </a>
               </li>
             </ul>
